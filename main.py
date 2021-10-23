@@ -16,7 +16,7 @@ def mean_age(i, j, k, x, y) -> float:
     return float(mean([i, j, k, x, y]))
 
 
-def average_consumption(a: Union[int, float], b: Union[int, float]) -> float:
+def average_consumption(a: "Union[int, float]", b: "Union[int, float]") -> float:
     """
     Teste 2 \n
     Dada a distância A e o combustível gasto B,
@@ -105,7 +105,7 @@ def factorial(x: int) -> int:
     return reduce(lambda x, y: x * y, range(1, x + 1))
 
 
-def intersection(a: list[int], b: list[int]) -> list[int]:
+def intersection(a: "list[int]", b: "list[int]") -> "list[int]":
     '''
     Teste 11 \n
     Dada duas listas de números A[1,2,3,4] e B[1,2,5,8], faça um algoritmo
@@ -114,7 +114,7 @@ def intersection(a: list[int], b: list[int]) -> list[int]:
     return [x for x in a if x in b]
 
 
-def concatenation(a: list[int], b: list[int]) -> list[int]:
+def concatenation(a: "list[int]", b: "list[int]") -> "list[int]":
     '''
     Teste 12 \n
     Dada duas listas de números A[1,2,3,4] e B[1,2,5,8], faça um algoritmo
@@ -124,7 +124,7 @@ def concatenation(a: list[int], b: list[int]) -> list[int]:
     return a + b
 
 
-def matrix_printer(matrix: list[list[int]]) -> list:
+def matrix_printer(matrix: "list[list[int]]") -> list:
     '''
     Teste 13 \n
     Faça um algoritmo que receba uma matriz[i,z] como parâmetro e imprima
